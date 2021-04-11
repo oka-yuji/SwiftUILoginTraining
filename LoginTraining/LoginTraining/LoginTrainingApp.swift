@@ -18,6 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct LoginTrainingApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
