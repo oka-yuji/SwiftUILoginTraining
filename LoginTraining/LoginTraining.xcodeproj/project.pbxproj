@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,17 @@
 		28DE1CB126215AA7002423A3 /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB026215AA7002423A3 /* HalfModalView.swift */; };
 		28DE1CB42622766F002423A3 /* LoginSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB32622766F002423A3 /* LoginSuccess.swift */; };
 		28DE1CB726228FF2002423A3 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB626228FF2002423A3 /* FlagViewModel.swift */; };
+		28DE1CBE2622E942002423A3 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */; };
+		28DE1CC22622E9DA002423A3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CC12622E9DA002423A3 /* LottieView.swift */; };
+		28DE1CC62622EC25002423A3 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DE1CC52622EC25002423A3 /* loading.json */; };
+		28DE1CCA2622ECE6002423A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CC92622ECE6002423A3 /* LoadingView.swift */; };
+		28DE1CCF2622F3B6002423A3 /* loading2.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DE1CCE2622F3B6002423A3 /* loading2.json */; };
+		28DE1CD22622F865002423A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28DE1CD12622F865002423A3 /* GoogleService-Info.plist */; };
+		E6108896DAE2783AF1F2F50A /* Pods_LoginTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3EA20C5220DFC092D499C4 /* Pods_LoginTraining.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23D843232BB7DA25C522B30F /* Pods-LoginTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTraining.debug.xcconfig"; path = "Target Support Files/Pods-LoginTraining/Pods-LoginTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		28DE1C9126213533002423A3 /* LoginTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DE1C9426213533002423A3 /* LoginTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTrainingApp.swift; sourceTree = "<group>"; };
 		28DE1C9626213533002423A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,13 @@
 		28DE1CB026215AA7002423A3 /* HalfModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfModalView.swift; sourceTree = "<group>"; };
 		28DE1CB32622766F002423A3 /* LoginSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccess.swift; sourceTree = "<group>"; };
 		28DE1CB626228FF2002423A3 /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
+		28DE1CC12622E9DA002423A3 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		28DE1CC52622EC25002423A3 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		28DE1CC92622ECE6002423A3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		28DE1CCE2622F3B6002423A3 /* loading2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading2.json; sourceTree = "<group>"; };
+		28DE1CD12622F865002423A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33E021E8175A4D730197E1EE /* Pods-LoginTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTraining.release.xcconfig"; path = "Target Support Files/Pods-LoginTraining/Pods-LoginTraining.release.xcconfig"; sourceTree = "<group>"; };
+		FA3EA20C5220DFC092D499C4 /* Pods_LoginTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28DE1CBE2622E942002423A3 /* BuildFile in Frameworks */,
+				E6108896DAE2783AF1F2F50A /* Pods_LoginTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +67,8 @@
 			children = (
 				28DE1C9326213533002423A3 /* LoginTraining */,
 				28DE1C9226213533002423A3 /* Products */,
+				94165A64ECBD1FDA83C141D6 /* Pods */,
+				B6047109F02B6DF59E7C805C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +88,10 @@
 				28DE1CAE2621517D002423A3 /* ViewModel */,
 				28DE1CAD2621515F002423A3 /* View */,
 				28DE1C9826213533002423A3 /* Assets.xcassets */,
+				28DE1CC52622EC25002423A3 /* loading.json */,
+				28DE1CCE2622F3B6002423A3 /* loading2.json */,
 				28DE1C9D26213533002423A3 /* Info.plist */,
+				28DE1CD12622F865002423A3 /* GoogleService-Info.plist */,
 				28DE1C9A26213533002423A3 /* Preview Content */,
 			);
 			path = LoginTraining;
@@ -87,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				28DE1CA426213581002423A3 /* LoginView.swift */,
+				28DE1CC92622ECE6002423A3 /* LoadingView.swift */,
 				28DE1CAA26214876002423A3 /* CapsuleView.swift */,
 				28DE1CB026215AA7002423A3 /* HalfModalView.swift */,
 				28DE1CB32622766F002423A3 /* LoginSuccess.swift */,
@@ -99,8 +122,27 @@
 			children = (
 				28DE1CA72621421A002423A3 /* BlurView.swift */,
 				28DE1CB626228FF2002423A3 /* FlagViewModel.swift */,
+				28DE1CC12622E9DA002423A3 /* LottieView.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94165A64ECBD1FDA83C141D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D843232BB7DA25C522B30F /* Pods-LoginTraining.debug.xcconfig */,
+				33E021E8175A4D730197E1EE /* Pods-LoginTraining.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6047109F02B6DF59E7C805C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3EA20C5220DFC092D499C4 /* Pods_LoginTraining.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,15 +152,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28DE1CA026213533002423A3 /* Build configuration list for PBXNativeTarget "LoginTraining" */;
 			buildPhases = (
+				044C8A59AF7952522BEFCB3A /* [CP] Check Pods Manifest.lock */,
 				28DE1C8D26213533002423A3 /* Sources */,
 				28DE1C8E26213533002423A3 /* Frameworks */,
 				28DE1C8F26213533002423A3 /* Resources */,
+				71D44EB782CEC171E39E77F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LoginTraining;
+			packageProductDependencies = (
+				28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */,
+			);
 			productName = LoginTraining;
 			productReference = 28DE1C9126213533002423A3 /* LoginTraining.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 28DE1C8826213533002423A3;
+			packageReferences = (
+				28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 28DE1C9226213533002423A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,11 +211,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DE1C9C26213533002423A3 /* Preview Assets.xcassets in Resources */,
+				28DE1CCF2622F3B6002423A3 /* loading2.json in Resources */,
+				28DE1CD22622F865002423A3 /* GoogleService-Info.plist in Resources */,
 				28DE1C9926213533002423A3 /* Assets.xcassets in Resources */,
+				28DE1CC62622EC25002423A3 /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		044C8A59AF7952522BEFCB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginTraining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D44EB782CEC171E39E77F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginTraining/Pods-LoginTraining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginTraining/Pods-LoginTraining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginTraining/Pods-LoginTraining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28DE1C8D26213533002423A3 /* Sources */ = {
@@ -174,6 +269,8 @@
 			files = (
 				28DE1CA526213581002423A3 /* LoginView.swift in Sources */,
 				28DE1CB42622766F002423A3 /* LoginSuccess.swift in Sources */,
+				28DE1CC22622E9DA002423A3 /* LottieView.swift in Sources */,
+				28DE1CCA2622ECE6002423A3 /* LoadingView.swift in Sources */,
 				28DE1CB126215AA7002423A3 /* HalfModalView.swift in Sources */,
 				28DE1CAB26214876002423A3 /* CapsuleView.swift in Sources */,
 				28DE1CB726228FF2002423A3 /* FlagViewModel.swift in Sources */,
@@ -220,6 +317,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -281,6 +379,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -304,6 +403,7 @@
 		};
 		28DE1CA126213533002423A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D843232BB7DA25C522B30F /* Pods-LoginTraining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +426,7 @@
 		};
 		28DE1CA226213533002423A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E021E8175A4D730197E1EE /* Pods-LoginTraining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28DE1C8926213533002423A3 /* Project object */;
 }

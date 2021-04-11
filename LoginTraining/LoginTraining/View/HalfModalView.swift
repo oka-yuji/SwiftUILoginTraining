@@ -11,6 +11,7 @@ struct HalfModalView: View {
     @State var email = ""
     @State var password = ""
     @State var showAlert = false
+    @EnvironmentObject var showModal: FlagViewModel
     @State var alertMessage = "メールアドレスもしくはパスワードが違います。"
     var body: some View {
         ZStack{
@@ -23,13 +24,13 @@ struct HalfModalView: View {
                 .cornerRadius(30)
                 .shadow(radius: 10)
             VStack{
-            VStack{
-        Rectangle()
-            .frame(width: 40, height: 5)
-            .cornerRadius(3)
-            .foregroundColor(Color.black.opacity(0.2))
-            .padding(.top, 8)
-            }.padding(.bottom, 10)
+                VStack{
+                    Rectangle()
+                        .frame(width: 40, height: 5)
+                        .cornerRadius(3)
+                        .foregroundColor(Color.black.opacity(0.2))
+                        .padding(.top, 8)
+                }.padding(.bottom, 10)
                 
                 VStack {
                     Spacer(minLength: 1)
@@ -38,12 +39,12 @@ struct HalfModalView: View {
                             .foregroundColor(Color.gray.opacity(0.8))
                             .font(.title2)
                             .padding(.leading)
-                    TextField("Your Email", text: $email)
-                        .keyboardType(.emailAddress)
-                        .font(.subheadline)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.leading, 10)
-                        .frame(height: 40)
+                        TextField("Your Email", text: $email)
+                            .keyboardType(.emailAddress)
+                            .font(.subheadline)
+                            //                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.leading, 10)
+                            .frame(height: 40)
                     }
                     Spacer(minLength: 1)
                     
@@ -56,12 +57,12 @@ struct HalfModalView: View {
                             .foregroundColor(Color.gray.opacity(0.8))
                             .font(.title2)
                             .padding(.leading)
-                    SecureField("  Pasword", text: $password)
-                        .keyboardType(.default)
-                        .font(.subheadline)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding(.leading, 10)
-                        .frame(height: 40)
+                        SecureField("  Pasword", text: $password)
+                            .keyboardType(.default)
+                            .font(.subheadline)
+                            //                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.leading, 10)
+                            .frame(height: 40)
                     }
                     Spacer(minLength: 1)
                 }
@@ -71,8 +72,10 @@ struct HalfModalView: View {
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
                 
                 HStack{
-                 Spacer()
-                    Button(action: {self.showAlert = true}) {
+                    Spacer()
+                    Button(action: {
+                       login()
+                    }) {
                         Text("Login")
                             .font(.title2).bold()
                     }
@@ -91,14 +94,26 @@ struct HalfModalView: View {
                 .padding(.trailing, 40)
                 .padding(.top,30)
                 
-            Spacer()
+                Spacer()
             }
         }
     }
+    
+    func login() {
+        self.showModal.isLoading = true
+        self.showModal.showHalfModal = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            self.showModal.isLoading = false
+            self.showAlert = true
+        }
+    }
+    
 }
 
 struct HalfModalView_Previews: PreviewProvider {
     static var previews: some View {
         HalfModalView()
+            .environmentObject(FlagViewModel())
     }
 }

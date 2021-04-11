@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State var bottomState = CGSize.zero
     @State var showFull = false
-    @ObservedObject var showModal = FlagViewModel()
+    @EnvironmentObject var showModal: FlagViewModel
     var body: some View {
         ZStack {
             ZStack{
@@ -40,7 +40,10 @@ struct LoginView: View {
                             .foregroundColor(Color("textColor"))
                         }
                     }
-                Button(action: {self.showModal.showHalfModal.toggle()}) {
+                Button(action: {
+                        self.showModal.showHalfModal.toggle()
+                    
+                }) {
                     ZStack{
                     CapsuleView()
                         .frame(width: 200, height: 60)
@@ -85,9 +88,12 @@ struct LoginView: View {
                             }
                         }
                     )
-            } .frame(width: UIScreen.main.bounds.width)
-            
-            
+            }
+            .frame(width: UIScreen.main.bounds.width)
+            if showModal.isLoading {
+                LoadingView()
+                    .offset(y: -100)
+        }
         }
     }
 }
@@ -95,5 +101,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(FlagViewModel())
     }
 }
