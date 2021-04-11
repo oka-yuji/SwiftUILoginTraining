@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct HalfModalView: View {
     @State var email = ""
@@ -100,6 +101,7 @@ struct HalfModalView: View {
     }
     
     func login() {
+        self.hideKeyboard()
         self.showModal.isLoading = true
         self.showModal.showHalfModal = false
         
@@ -107,6 +109,9 @@ struct HalfModalView: View {
             self.showModal.isLoading = false
             self.showAlert = true
         }
+    }
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
 }
