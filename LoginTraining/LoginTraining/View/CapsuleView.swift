@@ -21,7 +21,7 @@ struct CapsuleView: View {
                         .blur(radius: 10)
                         .blendMode(.colorBurn)
                 )
-        } .frame(width: 200, height: 60)
+        }
     }
 }
 
