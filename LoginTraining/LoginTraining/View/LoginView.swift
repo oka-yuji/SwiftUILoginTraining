@@ -94,6 +94,9 @@ struct LoginView: View {
                 LoadingView()
                     .offset(y: -100)
         }
+            if showModal.showLoginSuccessView {
+                LoginSuccess()
+            }
         }
     }
 }

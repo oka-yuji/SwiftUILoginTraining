@@ -104,12 +104,25 @@ struct HalfModalView: View {
         self.hideKeyboard()
         self.showModal.isLoading = true
         self.showModal.showHalfModal = false
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+//
+//        }
+        Auth.auth().signIn(withEmail: email, password: password) { (AuthDataResult, Error) in
             self.showModal.isLoading = false
-            self.showAlert = true
+            
+            if Error != nil{
+                self.alertMessage = Error?.localizedDescription ?? ""
+                self.showAlert = true
+            } else {
+                self.showModal.showLoginSuccessView = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                    self.showModal.showLoginSuccessView = false
+                }
+            }
         }
     }
+    
     func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
