@@ -79,7 +79,7 @@ struct HalfModalView: View {
                        login()
                         }
                         if showModal.showSignUpButton {
-                        
+                        signUp()
                         }
                     }) {
                         if showModal.showLoginButton {
@@ -130,6 +130,17 @@ struct HalfModalView: View {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     self.showModal.showLoginSuccessView = false
                 }
+            }
+        }
+    }
+    
+    func signUp() {
+        self.showModal.showHalfModal = false
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                email = ""
+                password = ""
             }
         }
     }
