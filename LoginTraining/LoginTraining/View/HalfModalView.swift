@@ -75,10 +75,21 @@ struct HalfModalView: View {
                 HStack{
                     Spacer()
                     Button(action: {
+                        if showModal.showLoginButton {
                        login()
+                        }
+                        if showModal.showSignUpButton {
+                        
+                        }
                     }) {
+                        if showModal.showLoginButton {
                         Text("Login")
                             .font(.title2).bold()
+                        }
+                        if showModal.showSignUpButton {
+                        Text("Sign Up")
+                            .font(.title2).bold()
+                        }
                     }
                     .padding(10)
                     .padding(.horizontal, 20)
@@ -135,3 +146,5 @@ struct HalfModalView_Previews: PreviewProvider {
             .environmentObject(FlagViewModel())
     }
 }
+
+

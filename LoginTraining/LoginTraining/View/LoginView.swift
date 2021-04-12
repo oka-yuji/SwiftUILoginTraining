@@ -32,16 +32,24 @@ struct LoginView: View {
                 .frame(width: UIScreen.main.bounds.width, height: 100)
                 .offset(y: -100)
                 
-                    Button(action: {}) {
+                    Button(action: {
+                        self.showModal.showHalfModal.toggle()
+                    self.showModal.showLoginButton = false
+                    self.showModal.showSignUpButton = true
+                        
+                        
+                    }) {
                         ZStack{
                         CapsuleView()
                             .frame(width: 200, height: 60)
-                        Text("Account creation")
+                        Text("Sign Up")
                             .foregroundColor(Color("textColor"))
                         }
                     }
                 Button(action: {
                         self.showModal.showHalfModal.toggle()
+                    self.showModal.showLoginButton = true
+                    self.showModal.showSignUpButton = false
                     
                 }) {
                     ZStack{

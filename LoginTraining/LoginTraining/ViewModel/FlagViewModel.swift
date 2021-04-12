@@ -12,4 +12,6 @@ class FlagViewModel: ObservableObject {
     @Published var showKeyboard = false
     @Published var isLoading = false
     @Published var showLoginSuccessView = false
+    @Published var showLoginButton = true
+    @Published var showSignUpButton = false
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,7 @@
 		28DE1CB126215AA7002423A3 /* HalfModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB026215AA7002423A3 /* HalfModalView.swift */; };
 		28DE1CB42622766F002423A3 /* LoginSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB32622766F002423A3 /* LoginSuccess.swift */; };
 		28DE1CB726228FF2002423A3 /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CB626228FF2002423A3 /* FlagViewModel.swift */; };
-		28DE1CBE2622E942002423A3 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */; };
+		28DE1CBE2622E942002423A3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 28DE1CBD2622E942002423A3 /* Lottie */; };
 		28DE1CC22622E9DA002423A3 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CC12622E9DA002423A3 /* LottieView.swift */; };
 		28DE1CC62622EC25002423A3 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 28DE1CC52622EC25002423A3 /* loading.json */; };
 		28DE1CCA2622ECE6002423A3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DE1CC92622ECE6002423A3 /* LoadingView.swift */; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28DE1CBE2622E942002423A3 /* BuildFile in Frameworks */,
+				28DE1CBE2622E942002423A3 /* Lottie in Frameworks */,
 				E6108896DAE2783AF1F2F50A /* Pods_LoginTraining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +133,6 @@
 				23D843232BB7DA25C522B30F /* Pods-LoginTraining.debug.xcconfig */,
 				33E021E8175A4D730197E1EE /* Pods-LoginTraining.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,7 +163,7 @@
 			);
 			name = LoginTraining;
 			packageProductDependencies = (
-				28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */,
+				28DE1CBD2622E942002423A3 /* Lottie */,
 			);
 			productName = LoginTraining;
 			productReference = 28DE1C9126213533002423A3 /* LoginTraining.app */;
@@ -185,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = 28DE1C8C26213533002423A3 /* Build configuration list for PBXProject "LoginTraining" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,7 +193,7 @@
 			);
 			mainGroup = 28DE1C8826213533002423A3;
 			packageReferences = (
-				28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */,
+				28DE1CBC2622E942002423A3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 28DE1C9226213533002423A3 /* Products */;
 			projectDirPath = "";
@@ -471,7 +470,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */ = {
+		28DE1CBC2622E942002423A3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -482,9 +481,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		28DE1CBD2622E942002423A3 /* SwiftPackageProductDependency */ = {
+		28DE1CBD2622E942002423A3 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 28DE1CBC2622E942002423A3 /* RemoteSwiftPackageReference */;
+			package = 28DE1CBC2622E942002423A3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
