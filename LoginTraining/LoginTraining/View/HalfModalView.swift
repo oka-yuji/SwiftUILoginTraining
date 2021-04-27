@@ -71,6 +71,7 @@ struct HalfModalView: View {
                 .background(BlurView(style: .systemMaterial))
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+                .offset(y: 10)
                 
                 HStack{
                     Spacer()
